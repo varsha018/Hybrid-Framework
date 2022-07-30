@@ -10,9 +10,10 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"./src/test/resources/com/features"},  //feature file path..
 		glue = {"com.stepdefinition" , "com.hooks"  },//step definition package
 	//	tags = "@All ",
-		plugin = {"pretty"
-			//	"json: target/Reports/report.json",
-			//	"junit: target/Reports/report.xml"
+		plugin = {"pretty",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				"timeline:test-output-thread/"
+			
 				}
 				
 	//	publish = true

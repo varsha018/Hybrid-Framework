@@ -3,3 +3,12 @@ if error coming on this:
 	
 	update below:
 	               Upgrade dependency extentreports-cucumber6-adapter to version 2.8.2 s
+	               
+	               
+Cucumber can be executed in parallel using JUNIT and MAVEN test execution plugin
+
+
+In JUnit the feature files are run in parallel rather than scenarios,
+which means all the scenarios in feature file will be executed by the same thread.
+
+We can use Maven Surefire or failsafe plugin to execute the runners
