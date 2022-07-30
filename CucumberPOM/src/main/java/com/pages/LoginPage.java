@@ -43,7 +43,15 @@ public class LoginPage {
 		driver.findElement(SignIn).click();
 	}
 	
-	
+	public AccountsPage doLogin(String un, String pw) {
+		System.out.println("Login with : " + un + "and password : " + pw);
+		
+		driver.findElement(emailID).sendKeys(un);
+		driver.findElement(password).sendKeys(pw); 
+		driver.findElement(SignIn).click();
+		
+		return new AccountsPage(driver); //page chaining concept
+	}
 	
 	
 	

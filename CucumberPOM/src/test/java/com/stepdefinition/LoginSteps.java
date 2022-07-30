@@ -55,9 +55,6 @@ public class LoginSteps {
 		L_Page.ClickOnLogin();
 	}
 
-	@Then("user gets the title of the accounts page")
-	public void user_gets_the_title_of_the_accounts_page() {
-		System.out.println("welcome to the accounts page!!!");
-	}
+
 
 }
